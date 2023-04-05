@@ -4,8 +4,8 @@ import RenderCampsite from '../features/campsites/RenderCampsite';
 import { toggleFavorite } from '../features/favorites/favoritesSlice';
 import { useState } from 'react';
 import { Input, Rating } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { postComment } from '../features/comments/commentsSlice';
+import { Icon } from 'react-native-elements';
 
 const CampsiteInfoScreen = ({ route }) => {
     const { campsite } = route.params;
@@ -91,14 +91,14 @@ const CampsiteInfoScreen = ({ route }) => {
                         style={{paddingVertical: 10}} />
                     <Input
                         placeholder='Author'
-                        leftIcon={<Icon name='user-o' size={30}/>}
+                        leftIcon={<Icon name='user-o' size={30} type='font-awesome' />}
                         leftIconContainerStyle={{paddingRight: 10}}
                         onChangeText={(author) => setAuthor(author)}
                         value={author}
                         ></Input>
                     <Input
                         placeholder='Comment'
-                        leftIcon={<Icon name='comment-o' size={30}/>}
+                        leftIcon={<Icon name='comment-o' size={30} type='font-awesome' />}
                         leftIconContainerStyle={{paddingRight: 10}}
                         onChangeText={(text)=>setText(text)}
                         value={text}
