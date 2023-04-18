@@ -28,6 +28,8 @@ git clone [https://github.com/ninetailedcoder/React--Portfolio-Project.git](http
 
 cd nucampsite-App-React-Native
 
+! If json-server file is in the app build then move it out of the build, then start the server !
+
 npm install
 
 npm ci
